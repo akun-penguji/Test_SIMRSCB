@@ -1,0 +1,14 @@
+{
+  "port": "8099",
+  "sirs_base_url": "https://sirs6.kemkes.go.id/apisirs6v2",
+  "sso_url": "https://akun-yankes.kemkes.go.id",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIxNywibmFtYSI6IlJTIFVtdW0gRGFlcmFoICBLYWJ1cGF0ZW4gQmludGFuIiwiZW1haWwiOiJyc3VkLmJpbnRhbkB5YWhvby5jb20iLCJzYXRLZXJJZCI6IjIwMDIwMDIiLCJqZW5pc1VzZXJJZCI6NCwiamVuaXNfdXNlcl9pZCI6NCwiaWF0IjoxNzg5MjU4MTk4LCJleHAiOjE3ODkyNTkwOTh9.s4App4Jbzq8t11GHTbnBUSpIxa5nEmiY6tQkR-Jc9wg",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIxNywiaWF0IjoxNzg5MjUxMjE3LCJleHAiOjE3ODkyNzI4MTd9.nzdg5iwZyG_sFH2h08U18MULMgFd1yZEw97KIvLnRVI",
+  "cf_clearance": "kHfbKBtEqHg.SHIakTZQM0dzLX240kjge9dh9ICzAyw-1789186574-1.2.1.1-yP21oPYW06VsxqzOqt4MmU6dUDswDKWnJXOGUGKrQov5kZoTVYmu9wtAl4utqN69R.49tqliinQQYOe2fVmm0INOqKjWnlqijhieSHMCb1qcUuv.DrYQx4AYarErn5iIF6GH.9Ho1e3iJagiUOfTW0wVQLY62PnRp7RNeuzkkS35giYsbDNXs5Q6W4ZcR2cMRLmiLgwpipLpMCha8JU_fyTj3fnkJz9VTibTUZVpy49CPD3C4gVZNqpdVPNCIApxS4PluPnhG7zqNl.lD.nBGrjAwqapDVTeh7dEkQo_elwzwmygLqwrlbMGGVH_MV9j2P6Vx4TtMFPHOHnDmPop0SBni08glKyimZatKZxdt_Q",
+  "xsrf_token": "3889766c-175b-4817-aab3-723d5c868631",
+  "kode_rs": "2002002",
+  "nama_rs": "RS Umum Daerah Cabangbungin",
+  "email": "rsud.cabangbungin@gmail.com",
+  "password": "Sirs12345@",
+  "headless": true
+}

@@ -1,0 +1,13 @@
+pub mod auth;
+pub mod pasien;
+pub mod registrasi;
+pub mod surat_rohani;
+pub mod surat_sehat;
+pub mod surat_skbn;
+pub mod persetujuan_satusehat;
+pub mod persetujuan_umum;
+pub mod pernyataan_jaminan;
+pub mod edukasi_pasien;
+pub mod materi_edukasi;
+pub mod hak_kewajiban;
+pub mod log_kinerja;

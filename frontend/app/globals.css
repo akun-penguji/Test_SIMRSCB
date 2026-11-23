@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* App didesain terang (semua background putih) — jangan ikut mode gelap OS,
+   supaya teks default tidak jadi putih di atas putih. */
+:root { color-scheme: light; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Display antrian — marquee text berjalan */
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 90s linear infinite;
+}
+
+/* ── Cetak UMUM (laporan/dashboard) — A4, sembunyikan chrome & elemen .no-print ── */
+@media print {
+  @page { margin: 12mm; }
+  html, body {
+    background: #fff !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .no-print { display: none !important; }
+  /* Lepas kontainer scroll/tinggi tetap agar SELURUH isi mengalir lintas halaman */
+  main, .overflow-auto, .overflow-y-auto, .overflow-x-auto, .overflow-hidden {
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+  }
+  /* Warna latar kartu/badge ikut tercetak */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ── Anjungan — Cetak tiket antrian (thermal 80mm) — HANYA halaman ber-#tiket-print ── */
+@media print {
+  @page tiket { size: 80mm auto; margin: 0; }
+  body:has(#tiket-print) {
+    page: tiket;
+    width: 80mm;
+    margin: 0;
+    padding: 0;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  body:has(#tiket-print) * { visibility: hidden; }
+  body:has(#tiket-print) #tiket-print,
+  body:has(#tiket-print) #tiket-print * {
+    visibility: visible;
+    color: #000 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+  body:has(#tiket-print) #tiket-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    padding: 4mm 3mm;
+    font-family: "Courier New", monospace;
+  }
+}
